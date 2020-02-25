@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Github User Search Engine</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <h1>Github User Search Engine</h1>
+    <div id="container">
+        <div id="content">
+            <form id="search_user" action="/" method="get">
+                <input type="text" name="username" id="username" placeholder="Search username..." alt="Search username"
+                    required />
+                <button type="submit">Search</button>
+            </form>
+
+            <div id="result">
+                <table id="user_info" class="hidden">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="" id="avatar" alt="avatar" />
+                            </td>
+                            <td>
+                                <span id="login" alt="username"></span>
+                                <h1 id="name" alt="name"></h1>
+                                <span id="bio" alt="bio"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div id="repositories_container" class="hidden">
+                    <h4>Repositories</h4>
+                    <hr class="thick_hr" />
+
+                    <table id="repositories" cellpadding="10" class="hidden">
+                        <tbody></tbody>
+                    </table>
+                    
+                    <div id="no_repositories" class="hidden">
+                        <span id="username"></span>
+                         doesn't have any repository
+                    </div>
+                </div>
+                
+                <div id="user_not_found" class="hidden">
+                    Username <span id="username"></span> 
+                    does not exist
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

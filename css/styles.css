@@ -1,0 +1,89 @@
+body {
+    background-color: silver;
+    font-family: "DejaVu Sans";
+}
+
+.thick_hr {
+    height: 2px;
+    border: none;
+    background-color: black;
+}
+
+#container {
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+#content {
+    background-color: white;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+#result {
+    margin-top: 15px;
+    text-align: left;
+}
+
+#avatar {
+    height: 75px;
+    width: 75px;
+}
+
+#login {
+    font-size: small;
+    font-style: italic;
+}
+
+#name {
+    margin: 0;
+}
+
+#bio {
+    font-size: small;
+}
+
+#repositories {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#repositories tr {
+    border-bottom: solid thin gray;
+}
+
+.repo_name {
+    width: 50%;
+}
+
+.repo_info {
+    width: 50%;
+    text-align: right;
+}
+
+#user_not_found {
+    font-size: small;
+    background-color: rgba(191, 63, 63, 0.5);
+    color: red;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+#no_repositories {
+    font-size: small;
+    background-color: rgba(255, 250, 5, 0.4);
+    color: orange;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+.hidden {
+    display: none;
+}
